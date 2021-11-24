@@ -1,0 +1,17 @@
+{
+    "nome": "luna",
+    "acoes": [
+        {
+            "nome": "Ligar",
+            "objeto": "bomba"
+        },
+        {
+            "nome": "desligar",
+            "objeto": "bomba"
+        },
+        {
+            "nome": "tratar",
+            "objeto": "piscina"
+        }
+    ]
+}
