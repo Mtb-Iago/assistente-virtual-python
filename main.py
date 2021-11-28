@@ -1,5 +1,4 @@
 import speech_recognition as sr
-# Do this in your ipython notebook or analysis script
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import json
@@ -29,7 +28,7 @@ class Luna:
             frase = "Desculpa, não entendi..."
         return frase
     #Tratando intrucao e guardando em array
-    def tratar_instrucao(self,palavras, comandos_instrucao):
+    def tratar_instrucao(self, palavras, comandos_instrucao):
         palavras_selecionadas = []
         res = ''
         tokens = word_tokenize(palavras, 'portuguese')
