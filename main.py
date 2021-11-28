@@ -17,7 +17,7 @@ class Luna:
             #Avisa ao usuario que esta pronto para ouvir
             print("Assistente ligada, qual o comando? ")
             #Armazena a informacao de audio na variavel
-            audio = microfone.listen(source)
+            audio = microfone.listen(source, timeout=5, phrase_time_limit=5)
         try:
             #Passa o audio para o reconhecedor de padroes do speech_recognition
             frase = microfone.recognize_google(audio,language='pt-BR')
@@ -55,7 +55,7 @@ class Luna:
                             else:
                                 res = 'Luna Responde: Desculpa não entendi o comando'
                 else:
-                    res = 'Para utilizar a assitente precisa chama-lá pelo nome..'
+                    res = 'Para utilizar a assitente precisa chama-lá pelo nome correto LUNA.'
             else:
                 res = 'Favor, seguir a ordem correta do comando [Nome assistente->ação->objeto] '
         else: 
